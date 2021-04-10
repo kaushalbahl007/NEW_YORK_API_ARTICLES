@@ -1,0 +1,50 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>New York Time</title>
+</head>
+<body>
+    <div class="header">
+        <h1>The New York Time Articles Search</h1>
+    </div>
+    <div class="wrapper">
+        <div class="controls">
+            <form action="#">
+                <p>
+                    <label for="search">Enter a Single search Term (required)</label>
+                    <input type="text" id="search" class="search" required>
+
+                </p>
+                <p>
+                    <label for="start-date">Enter a start date</label>
+                    <input type="date" id="start-date" class="start-date" pattern="[0-9]{8}">
+                </p>
+                <p>
+                    <label for="end-date">Enter a end date</label>
+                    <input type="date" id="end-date" class="end-date" pattern="[0-9]{8}">
+                </p>
+                <p>
+                    <button>
+                        Submit
+                    </button>
+                </p>
+
+            </form>
+        </div>
+        <div class="result">
+            <nav>
+                <button class="prev">Previous 10</button>
+                <button class="next">Next 10</button>
+            </nav>
+            <section>
+                
+            </section>
+            
+        </div>
+    </div>
+   <script src="./main.js"></script> 
+</body>
+</html>
